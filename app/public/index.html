@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/Semantic-ui/dist/semantic.css" />
+    <script src="styles/Semantic-ui/dist/jquery.js"></script>
+    <script src="styles/Semantic-ui/dist/semantic.js"></script>
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="ui segment" id="div" style="padding: 2%;">
+      <div class="ui secondary menu">
+        <a href="" class="active blue item" data-tab="first">home </a>
+        <a href="" class="blue item" data-tab="second"> messages </a>
+        <a href="" class="blue item" data-tab="third"> Amis </a>
+        <div class="right menu">
+          <div class="item">
+            <!-- <div class="ui icon input"> -->
+            <!-- <input type="text" placeholder="Search..." />
+              <i class="search link icon"></i> -->
+            <!--             </div> -->
+          </div>
+          <a class="ui item">Logout</a>
+        </div>
+      </div>
+
+      <div class="ui attached tab segement active" data-tab="first">
+        <p>home</p>
+      </div>
+      <div class="ui tab segement" data-tab="second">
+        <p>messages</p>
+      </div>
+      <div class="ui tab segement" data-tab="third">
+        <p>amis</p>
+      </div>
+      
+    </div>
+    <script>
+      $('.menu .item').tab();
+  </script>
+  </body>
+</html>
